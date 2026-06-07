@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nikila Abhayarathna | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+height:100vh;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:1.4rem;
+font-weight:400;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.typing{
+color:#60a5fa;
+font-weight:600;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+background:white;
+color:#1e3a8a;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+nav{
+position:sticky;
+top:0;
+background:white;
+padding:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:999;
+text-align:center;
+}
+
+nav a{
+text-decoration:none;
+color:#1e3a8a;
+font-weight:600;
+margin:0 15px;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.3rem;
+color:#1e3a8a;
+margin-bottom:40px;
+}
+
+.about{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+line-height:1.9;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-8px);
+}
+
+.skill-card h3{
+color:#1e3a8a;
+margin-bottom:10px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
+}
+
+.project h3{
+color:#1e3a8a;
+margin-bottom:15px;
+}
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.edu-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.edu-card h3{
+color:#1e3a8a;
+}
+
+.achievements{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.achievements ul{
+padding-left:20px;
+line-height:2;
+}
+
+.contact{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.contact p{
+margin:15px 0;
+font-size:1.1rem;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero h2{
+font-size:1rem;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>Nikila Abhayarathna</h1>
+
+<h2>
+<span class="typing"></span>
+</h2>
+
+<p>
+Motivated Computer Science & Software Engineering Undergraduate
+with interests in Data Analysis, Data Infrastructure,
+Software Development and UI/UX Design.
+Passionate about building modern digital solutions
+and transforming data into meaningful insights.
+</p>
+
+<a href="#about" class="btn">Explore Portfolio</a>
+
+</div>
+
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="fade">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<p>
+I am an undergraduate pursuing a Bachelor of Science (Hons)
+in Computer Science & Software Engineering.
+My interests span Data Analysis, Data Infrastructure,
+UI/UX Design and Software Development.
+
+I enjoy solving real-world problems through technology,
+analyzing information to support decision-making,
+and designing user-friendly digital experiences.
+I am continuously learning new technologies and seeking
+opportunities to grow within the IT industry.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills" class="fade">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Programming</h3>
+<p>Python<br>Java<br>JavaScript</p>
+</div>
+
+<div class="skill-card">
+<h3>Data Analysis</h3>
+<p>Data Interpretation<br>Statistical Analysis<br>Research Methods</p>
+</div>
+
+<div class="skill-card">
+<h3>Databases</h3>
+<p>MySQL<br>MongoDB<br>Database Design</p>
+</div>
+
+<div class="skill-card">
+<h3>UI/UX Design</h3>
+<p>Figma<br>Wireframing<br>Prototyping</p>
+</div>
+
+<div class="skill-card">
+<h3>Tools</h3>
+<p>GitHub<br>Trello<br>VS Code<br>Android Studio</p>
+</div>
+
+<div class="skill-card">
+<h3>Soft Skills</h3>
+<p>Leadership<br>Communication<br>Problem Solving</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="fade">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Senesa Child Center Management System</h3>
+<p>
+Developed a complete web-based management system
+to streamline child center administration and records.
+<br><br>
+Technologies:
+HTML, CSS, PHP, MySQL
+</p>
+</div>
+
+<div class="project">
+<h3>Mental Health Mobile App UI/UX</h3>
+<p>
+Designed a user-friendly mobile application prototype
+focused on mental wellness and accessibility.
+<br><br>
+Tool:
+Figma
+</p>
+</div>
+
+<div class="project">
+<h3>Probability & Statistics Research</h3>
+<p>
+Conducted data collection and statistical analysis
+for a research study on pet companionship trends.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="education" class="fade">
+
+<h2 class="section-title">Education</h2>
+
+<div class="timeline">
+
+<div class="edu-card">
+<h3>BSc (Hons) Computer Science & Software Engineering</h3>
+<p>SLIIT City Uni, Colombo</p>
+<p>Present</p>
+</div>
+
+<div class="edu-card">
+<h3>OTHM International Diploma in Administration</h3>
+<p>ICBT Campus Colombo</p>
+<p>2023 - 2024</p>
+</div>
+
+<div class="edu-card">
+<h3>G.C.E Advanced Level</h3>
+<p>Mahanama College, Colombo</p>
+<p>Accounting - B | Economics - B | Business Studies - C</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="section-title">Achievements</h2>
+
+<div class="achievements">
+
+<ul>
+<li>Senior Prefect – Mahanama College (2023)</li>
+<li>Dialog School Rugby League Runner-Up (2023)</li>
+<li>15th Annual Rugby Encounter Runner-Up (2023)</li>
+<li>Leadership Training Programme Participant</li>
+<li>Leadership & Personality Development Training</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="contact" class="fade">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>📧 nikiladulaj@gmail.com</p>
+<p>📞 0788 669 023</p>
+<p>📍 Colombo, Sri Lanka</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Nikila Abhayarathna | Portfolio Website
+</p>
+
+</footer>
+
+<script>
+
+const words = [
+"Software Engineering Undergraduate",
+"Data Analysis Enthusiast",
+"UI/UX Designer",
+"Future Technology Professional"
+];
+
+let i=0;
+let j=0;
+let current="";
+let isDeleting=false;
+
+function type(){
+
+current=words[i];
+
+if(!isDeleting){
+document.querySelector(".typing").textContent=
+current.substring(0,j++);
+if(j>current.length){
+isDeleting=true;
+setTimeout(type,1500);
+return;
+}
+}
+else{
+document.querySelector(".typing").textContent=
+current.substring(0,j--);
+if(j===0){
+isDeleting=false;
+i=(i+1)%words.length;
+}
+}
+
+setTimeout(type,isDeleting?50:100);
+}
+
+type();
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
